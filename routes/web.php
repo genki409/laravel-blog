@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,25 +18,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sample', function () {
-    return view('sample');
-});
+// Route::get('/sample', function () {
+//     return view('sample');
+// });
 
-Route::get('/create', function () {
-    return view('posts.create');
-});
+// Route::get('/create', function () {
+//     return view('posts.create');
+// });
 
-Route::get('/edit', function () {
-    return view('posts.edit');
-});
+// Route::get('/edit', function () {
+//     return view('posts.edit');
+// });
 
-Route::get('/index', function () {
-    return view('posts.index');
-});
+// Route::get('/index', function () {
+//     return view('posts.index');
+// });
 
-Route::get('/show', function () {
-    return view('posts.show');
-});
+// Route::get('/show', function () {
+//     return view('posts.show');
+// });
 
 Auth::routes();
 
